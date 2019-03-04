@@ -161,8 +161,12 @@ endif
 if 0 | endif
 "--------
 
-" vimの色テーマ(GVimは.gvimrcで指定)
-" colorscheme mycolor
+"----------------------------------------
+" filetype
+"----------------------------------------
+if has("autocmd")
+  filetype plugin indent on
+endif
 
 "----------------------------------------
 " diff/grep/tags
@@ -182,11 +186,11 @@ else
 endif
 
 "----------------------------------------
-" filetype
+" colorscheme
+" vimの色テーマ (GVimは.gvimrcで指定)
 "----------------------------------------
-if has("autocmd")
-  filetype plugin indent on
-endif
+" vimの色テーマ(GVimは.gvimrcで指定)
+" colorscheme mycolor
 
 "----------------------------------------
 " key mappings
